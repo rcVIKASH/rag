@@ -18,5 +18,12 @@ def main():
     print("-----------PDF Document------------")
     print(pdf_docs)
 
+    # lazy loading
+    lazy_pdf_loader = PyPDFLoader("./src/data/sample.pdf")
+    lazy_pdf_docs = lazy_pdf_loader.lazy_load()
+
+    print("-------------Lazy PDF Loader-------------")
+    for doc in lazy_pdf_docs:
+        print(doc.metadata)
 if __name__ == "__main__":
     main()
