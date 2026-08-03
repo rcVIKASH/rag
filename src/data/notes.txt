@@ -1,0 +1,5 @@
+Hello, this is a sample text file.
+It contains multiple lines of text.
+You can use it to practice reading files in Python.
+Line 4: Numbers like 123 and 456 are here.
+Line 5: Special characters !@#$%^&*() are also included.
