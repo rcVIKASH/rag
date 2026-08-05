@@ -6,7 +6,9 @@
 
 # from .retrievers import main
 
-from .retrievalsMQR import main
+# from .retrievalsMQR import main
+
+from .video_transcript_rag import main
 
 
 if __name__ == "__main__":

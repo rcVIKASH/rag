@@ -97,12 +97,11 @@ def main():
     print(f"Successfully added {len(documents)} documents to ChromaDB.")
 
     # get the first 5 documents from the vector store
-    retrieved_docs = vector_store.get(limit=5) 
+    retrieved_docs = vector_store.get(limit=5)
 
     # similarity search for a query
     response = vector_store.similarity_search(
-        query="Which states are in western India?",
-        k=2
+        query="Which states are in western India?", k=2
     )
 
     print("Retrieved documents based on similarity search:")
@@ -111,12 +110,9 @@ def main():
         print(f"Metadata: {doc.metadata}")
         print("-" * 50)
 
-    
     # search for a query with metadata filter
     response_with_filter = vector_store.similarity_search(
-        query="Which states are in western India?",
-        k=2,
-        filter={"region": "West"}
+        query="Which states are in western India?", k=2, filter={"region": "West"}
     )
 
     print("Retrieved documents based on similarity search with filter:")

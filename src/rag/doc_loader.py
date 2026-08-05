@@ -25,5 +25,7 @@ def main():
     print("-------------Lazy PDF Loader-------------")
     for doc in lazy_pdf_docs:
         print(doc.metadata)
+
+
 if __name__ == "__main__":
     main()
