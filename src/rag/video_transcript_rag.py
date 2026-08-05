@@ -65,7 +65,7 @@ def main():
     )
 
     # use ids in production to avoid duplicates, here we reset the collection for demonstration purposes
-    vector_store.reset_collection()
+    # vector_store.reset_collection()
 
     vector_store.add_documents(split_docs)
 
@@ -98,7 +98,7 @@ Answer:
         input_variables=["context", "question"],
     )
 
-    query = "What is Transformer in LLM?"
+    query = "Pm of india?"
 
     retrieved_docs = retriever.invoke(query)
 
